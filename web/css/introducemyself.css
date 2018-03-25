@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.IntroduceMyself_main_div{
+    margin: 100px auto;
+    width: 70%;
+    min-width: 800px;
+}
+
+.IntroduceMyself_text_div{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #d7d7d7;
+    border-radius: 50px;
+    border: 10px black double;
+}
+
+.IntroduceMyself_title_div{
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.IntroduceMyself_info_div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.IntroduceMyself_info_line_div{
+    width: 35%;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    background-color: #0a6999;
+    color: whitesmoke;
+    overflow: hidden;
+    padding-left: 20px;
+    position: relative;
+}
+
+.IntroduceMyself_hr_div{
+    width: 80%;
+    height:5px;
+    margin: 0 auto;
+    background: black
+}
+
+.IntroduceMyself_hidden_text_div{
+    background: black;
+    color: black;
+}
+
+.IntroduceMyself_info_title_div{
+    width: 50%;
+    height: 50px;
+    position: relative;
+}
+
+.IntroduceMyself_info_title_text_div{
+    width: 90%;
+    height: 100%;
+    border-radius: 25px;
+    line-height: 50px;
+    background-color: #0a6999;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.IntroduceMyself_info_line_div_array{
+    width: 100%;
+}
+
+.IntroduceMyself_info_line_div_array td{
+    width: 50%;
+    position: relative;
+}
+
+.IntroduceMyself_info_line_div_array .IntroduceMyself_info_line_div{
+    width: 80%;
+}
+
+.IntroduceMyself_info_hidden_line_div{
+    display: none;
+}
+
+.IntroduceMyself_info_plan_line_div{
+    position: relative;
+    background: #7b7b7b;
+    border: 5px #0a6999 solid;
+    line-height: 30px;
+}
+
+.IntroduceMyself_info_cover_line_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:#0a6999 ;
+
+}
+
+.IntroduceMyself_info_cover_text_line_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+
+}
+
+.IntroduceMyself_info_text_field_div{
+    width: 100%;
+    border-radius: 20px;
+    line-height: 40px;
+    background-color: #0a6999;
+    color: whitesmoke;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.IntroduceMyself_info_head_image_div{
+
+    position: absolute;
+    background-color: black;
+    border-radius: 50px;
+    width: 45%;
+    height: 400px;
+    z-index: 5100;
+    top: 40px;
+    right: 0;
+    overflow: hidden;
+
+}

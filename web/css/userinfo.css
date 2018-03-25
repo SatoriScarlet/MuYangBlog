@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#user_head_portrait
+{
+    margin: 0px auto;
+    overflow: hidden;
+    /*border-radius: 0 75px 0 75px;*/
+    border-radius: 50px;
+}
+
+.sidebar_userinfo
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: red;
+}
+
+#loginout{
+    width: 80%;
+}

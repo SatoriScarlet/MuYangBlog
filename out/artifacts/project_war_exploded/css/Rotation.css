@@ -1,0 +1,20 @@
+body{
+    background: #000000;
+    color: white;
+}
+#MainButton{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: #0050ff;
+}
+.button{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: #ff0009;
+}

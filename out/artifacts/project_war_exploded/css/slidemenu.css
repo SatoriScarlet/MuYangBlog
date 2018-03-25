@@ -1,0 +1,34 @@
+.mainButton{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+
+
+    text-align: center;
+    background-color: #ebebeb;
+    line-height: 120px;
+    border-radius: 20px;
+    border: 10px black solid ;
+    overflow: hidden;
+    font-size: 25px;
+}
+.littleButton{
+    width: 30%;
+    height: 30%;
+    background-color: #0a628f;
+    position: absolute;
+    z-index: 50;
+}
+.divButton{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 100px auto;
+}
+
+
+/*body{*/
+/*position: relative;*/
+/*}*/

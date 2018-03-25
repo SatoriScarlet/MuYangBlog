@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+
+    background-color: black;
+}
+
+.diary_singleMainDiv
+{
+    overflow: hidden;
+    margin: 0px auto;
+    width: 70%;
+    min-width: 800px;
+    background-color: #717171;
+    height: 70px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.diary_external_message
+{
+    position: relative;
+    background-color: #717171;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.diary_inside_message
+{
+    position: relative;
+    background-color: #717171;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 2em;
+    color: #a91e1e;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.diary_text
+{
+    position: relative;
+    background-color: #717171;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+#diary_put_maindiv
+{
+    position: fixed;
+
+    width: 10%;
+    height: 10%;
+    left: 97%;
+    top: 25%;
+    min-width: 125px;
+    min-height: 35px;
+    max-width: 250px;
+    max-height: 70px;
+    background-image: url("../img/button/blacklabel.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 9990;
+    cursor: pointer;
+}
+
+#diary_put_message
+{
+
+    position: relative;
+    left: 10%;
+    height: 100%;
+    width: 75%;
+    line-height: 100%;
+    background-image: url("../img/button/write.png");
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#diary_write_maindiv{
+    position: fixed;
+    top: 20%;
+    left: 100%;
+    height: 60%;
+    width: 30%;
+    min-height: 500px;
+    min-width: 500px;
+    border-radius: 25px;
+    border:15px double #8e1000;
+    background-color: #cccccc;
+    z-index: 9991;
+}
+
+#diary_write_showdiv{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    left: 0%;
+    text-align: center;
+}
+
+.diary_write_input{
+    background-color: white;
+    height: 30px;
+    width: 80%;
+    min-width: 200px;
+}
+
+
+
+
+#diary_write_text{
+    overflow: scroll;
+    height: 40%;
+    resize:none;
+}
+
+
+#diary_submit{
+    background-color: #cc4216;
+    color: white;
+}
+#diary_alter{
+    background-color: #cc4216;
+    color: white;
+}
+#diary_close{
+    background-color: #003fcc;
+    color: white;
+}
+
+
+.trapezoid{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    margin: 0px auto;
+    border-top: 50px solid transparent;
+    border-right: 450px solid red;
+    border-left: 450px solid transparent;
+    border-bottom: 50px solid red;
+
+}
+
+
+.diary_top_message{
+    position: absolute;
+    width: 100px;
+
+}
+
+
+
+.diary_alter_put{
+
+     background-image: url("../img/button/write_circle.png");
+     background-size: 100% 100%;
+     width: 50px;
+     height: 50px;
+     position: absolute;
+
+     bottom: 100px;
+     right: 50px;
+ }
+.diary_delete_put{
+
+    background-image: url("../img/button/delete_circle.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    bottom: 25px;
+    right: 50px;
+}
+
+
+.AllHide{
+    width: 0;
+    height: 0;
+}
+
+
+#diary_page_list{
+
+    margin-left: 30%;
+    color: white;
+
+}
+.diary_page_number{
+    float: left;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid white;
+}
+.diary_page_select{
+    background-color: #f0f0f0;
+    color: black;
+}

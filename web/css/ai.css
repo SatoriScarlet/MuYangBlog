@@ -1,0 +1,83 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #000000;
+}
+
+#AI_maindiv{
+    position: fixed;
+    display: none;
+    right: 30%;
+    bottom: 50px;
+
+
+    height: 413px;
+    width: 130px;
+    z-index: 7000;
+}
+
+
+#AI_imgdiv{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/bot/b.png");
+    background-size: 100%;
+}
+
+
+
+#AI_messagediv{
+
+    position: absolute;
+    top: -350px;
+    left: -550px;
+    height: 400px;
+    width: 600px;
+    background-image: url("../img/dialog/bot_dialog_1.png");
+    background-size: 100% 100%;
+
+}
+
+#AI_message_showdiv{
+
+    width: 70%;
+    height: 50%;
+    margin: 10% auto;
+    font-size: 20px;
+    line-height: 150%;
+
+
+}
+
+#AI_inputdiv{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
+    border: 10px double #000000;
+    top: 50px;
+    left: -600px;
+    overflow: hidden;
+    padding: 10px 10px 0 20px;
+    background-color: whitesmoke;
+}
+
+#AI_input_switch
+{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 20px;
+    bottom: 0;
+    line-height: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.AI_input_button{
+    background-color: #c0c0c0;
+}

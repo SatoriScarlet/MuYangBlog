@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#PopupMessage_MainDiv{
+
+
+    position: fixed;
+    z-index: 9998;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    margin-left: -300px;
+    top:200px;
+    border-radius: 75px;
+    border: double 10px black;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: none;
+}
+#PopupMessage_MessageDiv{
+    width: 60%;
+    height: 50%;
+    margin: 10% auto;
+    text-align: center;
+    color: #000000;
+    overflow: hidden;
+}
+#PopupMessage_OptionDiv{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+#PopupMessage_OptionDiv > div{
+    margin: 0 auto;
+    line-height: 40px;
+    background-color: #000000;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <session-config>
+        <session-timeout>30</session-timeout> <!-- 超时时间：30分钟 -->
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!--<filter>-->
+        <!--<filter-name>BeforeLogin</filter-name>-->
+        <!--<filter-class>com.muyang.filter.VisitorStatistics</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>BeforeLogin</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <servlet>
+        <servlet-name>UserLogin</servlet-name>
+        <servlet-class>com.muyang.service.UserLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLogin</servlet-name>
+        <url-pattern>/UserLogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserRegister</servlet-name>
+        <servlet-class>com.muyang.service.UserRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegister</servlet-name>
+        <url-pattern>/UserRegister</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserLoginOut</servlet-name>
+        <servlet-class>com.muyang.service.UserLoginOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginOut</servlet-name>
+        <url-pattern>/UserLoginOut</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BlogDiary</servlet-name>
+        <servlet-class>com.muyang.service.BlogDiary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlogDiary</servlet-name>
+        <url-pattern>/BlogDiary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PutDiary</servlet-name>
+        <servlet-class>com.muyang.service.PutDiary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PutDiary</servlet-name>
+        <url-pattern>/PutDiary</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeleteDiary</servlet-name>
+        <servlet-class>com.muyang.service.DeleteDiary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteDiary</servlet-name>
+        <url-pattern>/DeleteDiary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BlogProject</servlet-name>
+        <servlet-class>com.muyang.service.BlogProject</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlogProject</servlet-name>
+        <url-pattern>/BlogProject</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BlogProjectList</servlet-name>
+        <servlet-class>com.muyang.service.BlogProjectList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlogProjectList</servlet-name>
+        <url-pattern>/BlogProjectList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PutFile</servlet-name>
+        <servlet-class>com.muyang.service.PutFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PutFile</servlet-name>
+        <url-pattern>/PutFile</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

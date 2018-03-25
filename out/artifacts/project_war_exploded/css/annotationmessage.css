@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.AnnotationMessage_icon_div{
+    background-size: 100% 100%;
+    background-image: url("../img/button/question.png");
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: help;
+}
+.AnnotationMessage_text_div{
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 400px;
+    background-color: #ffffff;
+    border: 6px #0d0d0d double;
+    border-radius: 25px;
+
+    z-index: 8000;
+
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.login_message{
+    position: relative;
+    width: 100%;
+}
+.login_button{
+    color: black;
+    width: 80%;
+}
+.login_input{
+    color: black;
+    position: relative;
+    width: 80%;
+}
+
+#register{
+    background: #cc2800;
+    color: #ffffff;
+}
+#login{
+    background: #0064cc;
+    color: #ffffff;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+    <mapper namespace="com.muyang.entity">
+        <select id="userList" resultType="User">
+            SELECT * FROM userinfo
+        </select>
+        <select id="addUser" resultType="User">
+            INSERT INTO userinfo VALUES(#{id},#{username},#{passwd},#{display},#{registerDate},#{lastLoginDate},#{userPermission},#{headPortrait})
+        </select>
+        <select id="userLogin" resultType="User">
+            SELECT * FROM userinfo WHERE username=#{username} AND passwd=#{passwd}
+        </select>
+        <select id="userRegister" resultType="User">
+            INSERT INTO userinfo VALUES(#{userid},#{username},#{passwd},#{display},#{registerDate},#{lastLoginDate},#{userPermission},#{headPortrait})
+        </select>
+        <select id="userDisplayExist" resultType="User">
+            SELECT * FROM userinfo WHERE display=#{display}
+        </select>
+        <select id="userUserNameExist" resultType="User">
+            SELECT * FROM userinfo WHERE username=#{username}
+        </select>
+        <select id="getDiary" resultType="Diary">
+            SELECT * FROM diaryinfo ORDER BY diaryid DESC LIMIT #{first},#{number}
+        </select>
+        <select id="putDiary" resultType="Diary">
+            INSERT INTO diaryinfo VALUES(#{diaryid},#{external_message},#{inside_message},#{text},#{create_date},#{alter_date})
+        </select>
+        <select id="alterDiary" resultType="Diary">
+            UPDATE diaryinfo SET external_message=#{external_message},inside_message=#{inside_message},text=#{text},alter_date=#{alter_date} WHERE diaryid=#{diaryid}
+        </select>
+        <select id="getDiaryListNumber" resultType="java.lang.Integer">
+            SELECT COUNT(*) FROM diaryinfo
+        </select>
+        <select id="deleteDiaryr" resultType="Diary">
+            DELETE FROM diaryinfo WHERE diaryid=#{diaryid}
+        </select>
+        <select id="getProjectList" resultType="Project">
+            SELECT * FROM projectinfo ORDER BY projectId
+        </select>
+        <select id="getProjectCodeList" resultType="java.lang.String">
+            SELECT projectCode FROM projectinfo ORDER BY projectId
+        </select>
+        <select id="getProjectNameList" resultType="java.lang.String">
+            SELECT projectName FROM projectinfo ORDER BY projectId
+        </select>
+        <select id="getProject" resultType="Project">
+            SELECT * FROM projectinfo WHERE projectId=#{projectId}
+        </select>
+        <select id="getProjectPlan" resultType="ProjectPlan">
+            SELECT * FROM projectplan WHERE projectId=#{projectId} ORDER BY planTime DESC
+        </select>
+        <select id="getOTM" resultType="OTM">
+            SELECT * FROM OTMinfo WHERE OTMId=#{OTMId}
+        </select>
+        <select id="getOTMList" resultType="OTM">
+            SELECT * FROM OTMinfo ORDER BY OTMId
+        </select>
+    </mapper>
